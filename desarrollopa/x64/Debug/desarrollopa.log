@@ -1,0 +1,53 @@
+﻿  Game.cpp
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Color.h(11,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Color.h(11,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Color.h(11,38): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Color.h(12,8): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Solid.h(17,25): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Solid.h(17,20): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Solid.h(17,15): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Teapot.h(12,17): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Sphere.h(15,19): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Cuboid.h(15,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Cuboid.h(15,41): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Torus.h(14,24): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Torus.h(14,45): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Cylinder.h(14,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Cylinder.h(14,45): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Cylinder.h(14,59): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Game.cpp(14,51): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Game.cpp(14,41): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\desarrollopa\Game.cpp(37,45): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  desarrollopa.vcxproj -> C:\Users\Usuario\Desktop\desarrollopa_pa_parte_4_20241017b\desarrollopa_pa_parte_4_20241017b\x64\Debug\desarrollopa.exe
