@@ -10,4 +10,11 @@ void Cube::Render()
 	glRotatef(this->GetOrientation().GetZ(), 0.0, 0.0, 1.0);
 	glutSolidCube(this->GetSize());
 	glPopMatrix();
+
+
+}
+
+Solid* Cube::Clone()
+{
+	return new Cube(*this);
 }

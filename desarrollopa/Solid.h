@@ -3,6 +3,7 @@
 #include "Color.h"
 #include <GL/glut.h>
 
+
 class Solid
 {
 private:
@@ -16,6 +17,8 @@ public:
 		orientationSpeed(Vector3D(0, 0, 0)), 
 		color(Color(0.2, 0.3, 0.4, 1.0)) {}
 
+
+
 	inline Vector3D GetPosition() { return this->position; }
 	inline Vector3D GetOrientation() { return this->orientation; }
 	inline Vector3D GetOrientationSpeed() { return this->orientationSpeed; }
@@ -28,5 +31,6 @@ public:
 
 	virtual void Render() = 0;
 	virtual void Update();
+	//virtual Solid* Clone() = 0;
 };
 
