@@ -11,3 +11,8 @@ void Sphere::Render()
 	glutSolidSphere(this->GetRadius(), this->GetSlices(), this->GetSlacks());
 	glPopMatrix();
 }
+
+Solid* Sphere::Clone()
+{
+	return new Sphere(*this);
+}

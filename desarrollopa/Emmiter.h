@@ -28,5 +28,6 @@ public:
 
 	void Render();
 	void Update();
+	Solid* Clone();
 };
 

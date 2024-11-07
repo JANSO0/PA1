@@ -22,6 +22,6 @@ public:
 	 void ProcessKeyPressed(unsigned char key, int px, int py);
 	 void ProcessMouseClicked(int button, int state, int x, int y);
 	 void ProcessMouseMovement(int x, int y);
-
+	 Solid* Clone();
 };
 

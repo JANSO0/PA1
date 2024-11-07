@@ -9,7 +9,8 @@ private:
 	Solid* particula;
 
 public:
-	EmmiterConfiguration():numparticulas(20), periodo(4), particula(), Solid() {}
+	EmmiterConfiguration(int numparticulas, int periodo, Solid* particula) :
+		numparticulas(numparticulas), periodo(periodo), particula(particula) {}
 
 	inline int GetNumParticulas() { return this->numparticulas; }
 	inline int GetPeriodo() { return this->periodo; }
@@ -19,6 +20,6 @@ public:
 
 	void Render();
 	void Update();
-	
+	Solid* Clone();
 };
 

@@ -5,7 +5,10 @@ void Emmiter::Update()
 	milliseconds currentTime = duration_cast<milliseconds>(system_clock::now().time_since_epoch());
 	if ((currentTime.count() - this->initialMilliseconds.count()) - this->lastUpdateTime > this->configuracion.GetPeriodo())
 	{
+		srand(static_cast<unsigned int>(std::time(nullptr)));
 
+		//Generar un valor float aleatorio entre 0 y 1
+		float randomValue = static_cast<float>(rand()) / RAND_MAX;
 	}
 	this->lastUpdateTime = currentTime.count() - this->initialMilliseconds.count();
 }

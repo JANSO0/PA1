@@ -19,7 +19,7 @@ public:
 	void SetSize(float sizeToSet) { this->size = sizeToSet; }
 
 	void Render();
-	virtual Solid* Clone() = 0;
+	Solid* Clone();
 
 };
 

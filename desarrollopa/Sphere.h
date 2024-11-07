@@ -24,6 +24,6 @@ public:
 	void SetSlacks(int slacksToSet) { this->slacks = slacksToSet; }
 
 	void Render();
-
+	Solid* Clone();
 };
 
