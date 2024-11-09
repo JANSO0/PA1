@@ -7,11 +7,18 @@ void Game::Init()
 
 	mainScene.Init();
 
+	
+
+	Emmiter* emisor = new Emmiter();
+
+	this->mainScene.AddGameObject(emisor);
+
 	Teapot* teapot1 = new Teapot();
 
 		teapot1->SetPosition(Vector3D(1.0, 0.0, -3.0));
-		teapot1->SetColor(Color(0.2f, 0.4f, 0.6f, 1.0f));
+		teapot1->SetColor(Color(1.0, 0.0, 0.0, 0.0));
 		teapot1->SetOrientationSpeed(Vector3D(0.3, 0.0, 0.1));
+		teapot1->SetSpeed(Vector3D(0.3, 0.0, 0.1));
 
 	this->mainScene.AddGameObject(teapot1);
 
@@ -26,7 +33,7 @@ void Game::Init()
 
 		sphere1->SetPosition(Vector3D(-1.0, 1.0, -3.0));
 		sphere1->SetColor(Color(1.0f, 0.0f, 0.0f, 1.0f));
-		sphere1->SetOrientationSpeed(Vector3D(3, 6.0, 1.0));
+		sphere1->SetOrientationSpeed(Vector3D(0, 0.0, 0.0));
 
 	this->mainScene.AddGameObject(sphere1);
 

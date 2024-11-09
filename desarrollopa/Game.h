@@ -7,6 +7,7 @@
 #include "Cylinder.h"
 #include "Scene.h"
 #include "Solid.h"
+#include "Emmiter.h"
 
 using namespace std;
 
@@ -14,6 +15,7 @@ class Game
 {
 private:
 
+	Emmiter emisor;
 	Teapot teapot;
 	Display display1;
 	Cube cube1;
