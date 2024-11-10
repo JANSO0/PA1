@@ -27,7 +27,7 @@ private:
 
 public:
 
-	Game() {}
+	Game() { srand(static_cast<unsigned int>(std::time(nullptr))); }
 
 	void Init();
 	void Render();
