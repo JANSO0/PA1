@@ -5,6 +5,8 @@
 #include "Solid.h"
 #include "EmmiterConfiguration.h"
 
+
+
 using namespace std;
 using namespace std::chrono;
 
@@ -14,6 +16,7 @@ private:
 	vector<Solid*> refparticulas;
 	EmmiterConfiguration configuracion;
 	
+	int contador = 0;
 
 	//TIEMPO//
 	milliseconds initialMilliseconds;
@@ -29,12 +32,11 @@ public:
 	}
 
 	// Constructor predeterminado sin configuración
-	Emmiter() : configuracion()  // Esto llamará al constructor predeterminado de EmmiterConfiguration
-	{
+	Emmiter() : configuracion() {
 		srand(static_cast<unsigned int>(std::time(nullptr)));
 		this->initialMilliseconds = duration_cast<milliseconds>(system_clock::now().time_since_epoch());
 		this->lastUpdateTime = 0;
-	}
+	}  // Esto llamará al constructor predeterminado de EmmiterConfiguration
 
 
 	inline vector<Solid*> GetRefparticulas() { return this->refparticulas; }
@@ -46,6 +48,8 @@ public:
 	Vector3D VectorAleatorio();
 	Vector3D VectorSAleatorio();
 	Vector3D VectorOAleatorio();
+	Vector3D VectorOSAleatorio();
+
 	Color ColorAleatorio();
 };
 

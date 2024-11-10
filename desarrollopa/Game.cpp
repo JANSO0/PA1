@@ -14,7 +14,7 @@ void Game::Init()
 	this->mainScene.AddGameObject(emisor);
 
 
-	Teapot* teapot1 = new Teapot();
+	/*Teapot* teapot1 = new Teapot();
 
 		teapot1->SetPosition(Vector3D(1.0, 0.0, -3.0));
 		teapot1->SetColor(Color(1.0, 0.0, 0.0, 1.0));
@@ -53,7 +53,7 @@ void Game::Init()
 	cylinder1->SetOrientation(Vector3D(90.0, 0.0, 0.0));
 	cylinder1->SetColor(Color(0.6f, 0.1f, 0.7f, 0.8f));
 
-	this->mainScene.AddGameObject(cylinder1);
+	this->mainScene.AddGameObject(cylinder1);*/
 
 }
 
@@ -65,6 +65,7 @@ void Game::Render()
 void Game::Update()
 {
 	this->mainScene.Update();
+
 }
 
 void Game::ProcessKeyPressed(unsigned char key, int px, int py)

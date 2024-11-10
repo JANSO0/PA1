@@ -9,6 +9,7 @@
 #include "Solid.h"
 #include "Emmiter.h"
 
+
 using namespace std;
 
 class Game

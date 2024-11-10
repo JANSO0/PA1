@@ -1,34 +1,48 @@
 #include "Emmiter.h"
 
+
+
 void Emmiter::Update()
 {
 	milliseconds currentTime = duration_cast<milliseconds>(system_clock::now().time_since_epoch());
 
-	int contador = 0;
 
-	if (contador < configuracion.GetNumParticulas()) {
-
-	if ((currentTime.count() - this->initialMilliseconds.count()) - this->lastUpdateTime > this->configuracion.GetPeriodo())
+	if ((currentTime.count() - this->initialMilliseconds.count()) - this->lastUpdateTime > this->configuracion.GetPeriodo() && contador < configuracion.GetNumParticulas())
 	{
 		
-			Solid* s = configuracion.GetParticula()->Clone();
+			Solid* s = configuracion.GetParticula1()->Clone();
+			Solid* w = configuracion.GetParticula2()->Clone();
 
 			s->SetColor(ColorAleatorio());
 			s->SetOrientation(VectorOAleatorio());
 			s->SetPosition(VectorAleatorio());
-			s->SetSpeed(VectorAleatorio());
+			s->SetSpeed(VectorOSAleatorio());
+			s->SetOrientationSpeed(VectorOSAleatorio());
 			
+			w->SetColor(ColorAleatorio());
+			w->SetOrientation(VectorOSAleatorio());
+			w->SetPosition(VectorAleatorio());
+			w->SetSpeed(VectorOSAleatorio());
+			w->SetOrientationSpeed(VectorOSAleatorio());
 
 
 			refparticulas.push_back(s);
+			refparticulas.push_back(w);
 
 			contador++;
 
 			this->lastUpdateTime = currentTime.count() - this->initialMilliseconds.count();
 		}
+	// Actualizar las partículas ya generadas
+	for (auto& part : refparticulas)
+	{
+		part->Update();  // Sin pasar deltaTime, ya que no lo estás usando
 	}
-	
+
 }
+	
+
+
 void Emmiter::Render()
 {
 	//this->configuracion.Render();
@@ -48,7 +62,7 @@ Solid* Emmiter::Clone()
 Vector3D Emmiter::VectorAleatorio()
 {
 	
-	//Generar un valor float aleatorio entre 0 y 1
+
 	float randomX = (static_cast<float>(rand()) / RAND_MAX * 10.0f) - 5.0f;
 	float randomY = (static_cast<float>(rand()) / RAND_MAX * 10.0f) - 5.0f;
 
@@ -62,7 +76,7 @@ Vector3D Emmiter::VectorAleatorio()
 Vector3D Emmiter::VectorOAleatorio()
 {
 
-	//Generar un valor float aleatorio entre 0 y 1
+
 	float randomX = (static_cast<float>(rand()) / RAND_MAX*100);
 	float randomY = (static_cast<float>(rand()) / RAND_MAX *100);
 	float randomZ = (static_cast<float>(rand()) / RAND_MAX*100) ;
@@ -73,18 +87,34 @@ Vector3D Emmiter::VectorOAleatorio()
 	return O;
 
 }
+
 Vector3D Emmiter::VectorSAleatorio()
 {
 
 	//Generar un valor float aleatorio entre 0 y 1
-	float randomX = (static_cast<float>(rand()) / (RAND_MAX*100));
-	float randomY = (static_cast<float>(rand()) / (RAND_MAX * 100));
-	float randomZ = (static_cast<float>(rand()) / (RAND_MAX * 100));
+	float randomX = (static_cast<float>(rand()) / (RAND_MAX * 1000));
+	float randomY = (static_cast<float>(rand()) / (RAND_MAX * 1000));
+	float randomZ = (static_cast<float>(rand()) / (RAND_MAX * 1000));
 
 
 	Vector3D S(randomX, randomY, randomZ);
 
 	return S;
+
+}
+
+Vector3D Emmiter::VectorOSAleatorio()
+{
+
+	//Generar un valor float aleatorio entre 0 y 1
+	float randomX = (static_cast<float>(rand()) / (RAND_MAX * 10));
+	float randomY = (static_cast<float>(rand()) / (RAND_MAX * 10));
+	float randomZ = (static_cast<float>(rand()) / (RAND_MAX * 10));
+
+
+	Vector3D os(randomX, randomY, randomZ);
+
+	return os;
 
 }
 

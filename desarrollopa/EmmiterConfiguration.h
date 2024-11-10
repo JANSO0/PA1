@@ -3,6 +3,7 @@
 #include "Teapot.h"
 #include "Sphere.h"
 #include "Cube.h"
+#include "Torus.h"
 
 
 class EmmiterConfiguration 
@@ -10,23 +11,27 @@ class EmmiterConfiguration
 private:
 	int numparticulas;
 	int periodo;
-	Solid* particula;
+	Solid* particula1;
+	Solid* particula2;
 
 public:
-	EmmiterConfiguration() : numparticulas(2), periodo(100)
+	EmmiterConfiguration() : numparticulas(30), periodo(400)
 	{
-		this->particula = new Cube();
+		this->particula1 = new Torus();
+		this->particula2 = new Teapot();
 	}
 
  
 
 	inline int GetNumParticulas() { return this->numparticulas; }
 	inline int GetPeriodo() { return this->periodo; }
-	inline Solid* GetParticula() { return this->particula; }
+	inline Solid* GetParticula1() { return this->particula1; }
+	inline Solid* GetParticula2() { return this->particula2; }
 
 	void SetNumParticulas(int numparticulasToSet) { this->numparticulas = numparticulasToSet; }
 	void SetPeriodo(int periodoToSet) { this->periodo = periodoToSet; }
-	void SetParticula(Solid* particulaToSet) { this->particula = particulaToSet; }
+	void SetParticula1(Solid* particula1ToSet) { this->particula1 = particula1ToSet; }
+	void SetParticula2(Solid* particula2ToSet) { this->particula2 = particula2ToSet; }
 
 	
 };
