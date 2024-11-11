@@ -9,7 +9,7 @@ private:
 
 public:
 
-	Teapot() : size(0.4), Solid() {}
+	Teapot() : size(1.4), Solid() {}
 
 	inline float GetSize() { return this->size; }
 	void SetSize(float sizeToSet) { this->size = sizeToSet; }

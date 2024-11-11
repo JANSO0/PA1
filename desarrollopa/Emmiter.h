@@ -3,6 +3,7 @@
 #include <vector>
 #include <chrono>
 #include "Solid.h"
+#include "Torus.h"
 #include "EmmiterConfiguration.h"
 
 

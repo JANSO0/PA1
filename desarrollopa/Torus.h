@@ -11,7 +11,7 @@ private:
 	int rings;
 
 public:
-	Torus():internalRadius(0.2), externalRadius(0.4), faces(16), rings(16), Solid() {}
+	Torus():internalRadius(1.2), externalRadius(19.4), faces(16), rings(16), Solid() {}
 
 	inline float GetInternalRadius() const { return this->internalRadius; }
 	inline void SetInternalRadius(const float& internalRadiusToSet) { this->internalRadius = internalRadiusToSet; }

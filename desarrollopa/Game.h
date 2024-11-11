@@ -20,6 +20,7 @@ private:
 	Teapot teapot;
 	Display display1;
 	Cube cube1;
+	Cube cube2;
 	Sphere sphere1;
 	Torus torus1;
 	Cylinder cylinder1;

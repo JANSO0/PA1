@@ -12,7 +12,7 @@ public:
 
 	Cube() : Solid()
 	{
-		this->size = 0.5;
+		this->size = 7.5;
 	}
 
 	inline float GetSize() { return this->size; }

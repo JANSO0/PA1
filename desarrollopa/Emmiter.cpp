@@ -11,32 +11,40 @@ void Emmiter::Update()
 	{
 		
 			Solid* s = configuracion.GetParticula1()->Clone();
-			Solid* w = configuracion.GetParticula2()->Clone();
+			//Solid* w = configuracion.GetParticula2()->Clone();
+			//Solid* r = configuracion.GetParticula3()->Clone();
 
 			s->SetColor(ColorAleatorio());
 			s->SetOrientation(VectorOAleatorio());
 			s->SetPosition(VectorAleatorio());
-			s->SetSpeed(VectorOSAleatorio());
+			s->SetSpeed(VectorSAleatorio());
 			s->SetOrientationSpeed(VectorOSAleatorio());
 			
-			w->SetColor(ColorAleatorio());
+			/*w->SetColor(ColorAleatorio());
 			w->SetOrientation(VectorOSAleatorio());
 			w->SetPosition(VectorAleatorio());
-			w->SetSpeed(VectorOSAleatorio());
-			w->SetOrientationSpeed(VectorOSAleatorio());
+			w->SetSpeed(VectorSAleatorio());
+			w->SetOrientationSpeed(VectorOSAleatorio());*/
+
+			//r->SetColor(ColorAleatorio());
+			//r->SetOrientation(VectorOSAleatorio());
+			//r->SetPosition(VectorAleatorio());
+			//r->SetSpeed(VectorSAleatorio());
+			//r->SetOrientationSpeed(VectorOSAleatorio());
 
 
 			refparticulas.push_back(s);
-			refparticulas.push_back(w);
+			//refparticulas.push_back(w);
+			//refparticulas.push_back(r);
 
 			contador++;
 
 			this->lastUpdateTime = currentTime.count() - this->initialMilliseconds.count();
 		}
-	// Actualizar las partículas ya generadas
+	
 	for (auto& part : refparticulas)
 	{
-		part->Update();  // Sin pasar deltaTime, ya que no lo estás usando
+		part->Update(); 
 	}
 
 }
@@ -67,7 +75,7 @@ Vector3D Emmiter::VectorAleatorio()
 	float randomY = (static_cast<float>(rand()) / RAND_MAX * 10.0f) - 5.0f;
 
 
-	Vector3D r(randomX, randomY, 0);
+	Vector3D r(randomX, randomY, -100);
 
 	return r;
 
@@ -92,12 +100,12 @@ Vector3D Emmiter::VectorSAleatorio()
 {
 
 	//Generar un valor float aleatorio entre 0 y 1
-	float randomX = (static_cast<float>(rand()) / (RAND_MAX * 1000));
-	float randomY = (static_cast<float>(rand()) / (RAND_MAX * 1000));
-	float randomZ = (static_cast<float>(rand()) / (RAND_MAX * 1000));
+	float randomX = (static_cast<float>(rand()) / (RAND_MAX * 510));
+	float randomY = (static_cast<float>(rand()) / (RAND_MAX * 510));
+	float randomZ = (static_cast<float>(rand()) / (RAND_MAX * 510));
 
 
-	Vector3D S(randomX, randomY, randomZ);
+	Vector3D S(randomX, randomY, 0.5);
 
 	return S;
 

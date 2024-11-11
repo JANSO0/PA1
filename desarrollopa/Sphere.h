@@ -12,7 +12,7 @@ private:
 
 public:
 
-	Sphere() : radius(0.3), slices(10), slacks(8), Solid()
+	Sphere() : radius(0.09), slices(30), slacks(20), Solid()
 	{}
 
 	inline float GetRadius() { return this->radius; }
